@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 2500;
 //var router = express.Router()
 hbs.registerPartials(__dirname + '/views/part');
 
@@ -88,5 +89,5 @@ app.get('/bad', (req,res)=>{
 })
 
 app.listen(2500,()=>{
-  console.log('server started on port 2500');
+  console.log(`server started on port ${port}`);
 });
