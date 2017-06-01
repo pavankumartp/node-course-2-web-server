@@ -88,6 +88,6 @@ app.get('/bad', (req,res)=>{
   res.send({error:'The server could not serve your request'});
 })
 
-app.listen(2500,()=>{
+app.listen(port,()=>{
   console.log(`server started on port ${port}`);
 });
